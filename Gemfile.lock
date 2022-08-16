@@ -91,6 +91,11 @@ GEM
     digest (3.1.0)
     erubi (1.11.0)
     erubis (2.7.0)
+    factory_bot (4.11.1)
+      activesupport (>= 3.0.0)
+    factory_bot_rails (4.11.1)
+      factory_bot (~> 4.11.1)
+      railties (>= 3.0.0)
     globalid (1.0.0)
       activesupport (>= 5.0)
     haml (5.2.2)
@@ -264,6 +269,7 @@ DEPENDENCIES
   bootsnap
   capybara
   debug
+  factory_bot_rails
   haml-rails (~> 2.0)
   importmap-rails
   jbuilder
