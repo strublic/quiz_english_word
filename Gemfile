@@ -7,6 +7,7 @@ gem "rails", "~> 7.0.3", ">= 7.0.3.1"
 
 gem "sprockets-rails"
 gem "haml-rails", "~> 2.0"
+gem "simple_form"
 gem "pg"
 gem "puma", "~> 5.0"
 gem "importmap-rails"
