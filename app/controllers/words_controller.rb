@@ -6,7 +6,7 @@ class WordsController < ApplicationController
     def new
         @word = Word.new
     end
-
+    
     def create 
         @word = Word.new(word_params)
         if @word.save
