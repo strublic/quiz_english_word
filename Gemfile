@@ -16,6 +16,8 @@ gem "stimulus-rails"
 gem "jbuilder"
 gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 gem "bootsnap", require: false
+gem 'bootstrap', '~> 5.2.0'
+gem 'jquery-rails'
 
 
 group :development, :test do
