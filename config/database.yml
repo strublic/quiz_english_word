@@ -7,14 +7,14 @@ default: &default
 
 development:
   <<: *default
-  database: quiz_english_word_development
+  database: quiz_pick_word_development
 
 test:
   <<: *default
-  database: quiz_english_word_test
+  database: quiz_pick_word_test
 
 production:
   <<: *default
-  database: quiz_english_word_production
+  database: quiz_pick_word_production
   username: username
   password: <%= ENV['PROJECT_DATABASE_PASSWORD'] %>
