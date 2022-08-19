@@ -10,6 +10,7 @@ gem "haml-rails", "~> 2.0"
 gem "simple_form"
 gem "pg"
 gem "puma", "~> 5.0"
+gem 'pry'
 gem "importmap-rails"
 gem "turbo-rails"
 gem "stimulus-rails"
