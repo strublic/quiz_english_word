@@ -137,4 +137,19 @@ RSpec.describe WordsController, type: :controller do
     end
   end
 
+  describe "DELETE destroy" do
+    subject { put :destroy, params: params }
+
+    let!(:word) {create(:word)}
+
+    context "valid params" do
+      let(:params) do
+        { id: word.id }
+      end
+
+      it 'deletes word' do
+        expect {subject}.to change(Word, :count).from(1).to(0)
+      end
+    end
+  end
 end
