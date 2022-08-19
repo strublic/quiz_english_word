@@ -26,3 +26,4 @@
                         = word.language&.name || "Unknown"
                     %td
                         = link_to("Show", word_path(word), class: 'btn btn-primary')
+                        = link_to("Edit", edit_word_path(word), class: 'btn btn-primary')

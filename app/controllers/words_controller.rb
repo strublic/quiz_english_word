@@ -10,9 +10,22 @@ class WordsController < ApplicationController
     def create 
         @word = Word.new(word_params)
         if @word.save
-            redirect_to(words_path)
+            redirect_to(word_path)
         else
             render :new
+        end
+    end
+
+    def edit
+        @word = Word.find(params[:id])
+    end
+
+    def update 
+        @word = Word.find(params[:id])
+        if @word.update(word_params)
+            redirect_to(word_path(@word))
+        else
+            render :edit
         end
     end
 
