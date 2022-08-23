@@ -11,6 +11,7 @@ gem "simple_form"
 gem "pg"
 gem "puma", "~> 5.0"
 gem 'pry'
+gem 'devise'
 gem "importmap-rails"
 gem "turbo-rails"
 gem "stimulus-rails"

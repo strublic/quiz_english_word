@@ -1,0 +1,6 @@
+- flash.each do |key, value|
+    %div{:class => "alert alert-#{key}"}
+        %a.close{"data-dimiss" => "alert", :href =>"#"} x
+        %ul
+            %li
+                = value
